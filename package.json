@@ -1,0 +1,34 @@
+{
+  "name": "create-ember-ghost-template",
+  "version": "1.0.0",
+  "@authmaker/generator-express:version": "3.2.2",
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "start-local": "NODE_ENV=development pm2 start app.js --name create-ember-ghost-template --watch",
+    "test": "NODE_ENV=test mocha --recursive --reporter spec",
+    "test-watch": "npm run test -- -w --reporter min"
+  },
+  "dependencies": {
+    "authmaker-verify-express": "^3.0.0",
+    "body-parser": "^1.14.1",
+    "cors": "^2.5.3",
+    "express": "^4.12.3",
+    "express-autoroute": "^2.1.0",
+    "express-autoroute-json": "^3.5.0",
+    "lodash": "^4.13.1",
+    "mongoose": "^5.1.1",
+    "mongoose-nconf-connect": "^2.2.0",
+    "morgan": "^1.5.2",
+    "nconf": "^0.9.1",
+    "winston": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1"
+  },
+  "engines": {
+    "node": "8.* || >= 10.*"
+  }
+}
