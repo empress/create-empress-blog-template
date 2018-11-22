@@ -1,7 +1,6 @@
 {
   "name": "create-ember-ghost-template",
   "version": "0.1.0",
-  "@authmaker/generator-express:version": "3.2.2",
   "keywords": [
     "ember",
     "ember-cli",
