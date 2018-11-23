@@ -1,6 +1,6 @@
 {
   "name": "create-ember-ghost-template",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Enables you to start a new ember-ghost template using: npm init ember-ghost-template name",
   "keywords": [
     "ember",
