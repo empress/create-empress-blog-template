@@ -1,20 +1,28 @@
 {
   "name": "create-ember-ghost-template",
   "version": "0.1.1",
+  "description": "Enables you to start a new ember-ghost template using: npm init ember-ghost-template name",
   "keywords": [
     "ember",
     "ember-cli",
-    "npm",
-    "ember-ghost"
+    "ember-ghost",
+    "npm"
   ],
+  "repository": "https://github.com/empress/create-ember-ghost",
+  "license": "MIT",
+  "author": {
+    "name": "Chris Manson",
+    "email": "chris.manson@simplabs.com",
+    "url": "https://simplabs.com"
+  },
+  "bin": {
+    "create-ember-ghost-template": "index.js"
+  },
   "dependencies": {
     "ember-cli": "^3.5.1",
     "execa": "^1.0.0",
     "minimist": "^1.2.0",
     "who-ran-me": "^1.0.0"
-  },
-  "bin": {
-    "create-ember-ghost-template": "index.js"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
