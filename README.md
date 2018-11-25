@@ -25,7 +25,7 @@ npm init ember-ghost-template <name>
 This will create a new Ember Ghost template called ember-ghost-<name>-template in the current directory. You should then be able to cd into the directory and start the example app.
 
 ```sh
-cd ember-ghost-example-templat
+cd ember-ghost-example-template
 npm start
 ```
 
