@@ -27,7 +27,7 @@ for (let i = 2; i < process.argv.length; i += 1) {
 (async () => {
   try {
     await execa('ember', args, { stdio: 'inherit' });
-    await execa('ember', ['install', 'ember-ghost-base-template'], { cwd: pluginName, stdio: 'inherit' });
+    await execa('ember', ['install', 'ember-ghost', 'ember-ghost-base-template'], { cwd: pluginName, stdio: 'inherit' });
   } catch (err) {
     // eslint-disable-next-line no-console
     console.error(`Error running 'create-ember-ghost-template': ${err.message}`, err);
