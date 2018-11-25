@@ -5,7 +5,7 @@ This is a utility to get you started in creating a new [Ember-Ghost](https://git
 
 Once you have this running locally it is time for you to jump in and start editing the templates and styles so that your template looks super awesome! 💪 If you create an template that other people can use please [ping me on twitter](https://twitter.com/real_ate) and I'll add it to a list of available templates
 
-## Requirements
+## Requirements
 
 You should make sure that you have `npm` version 6.1 or later:
 
