@@ -8,7 +8,7 @@
     "ember-ghost",
     "npm"
   ],
-  "repository": "https://github.com/empress/create-ember-ghost",
+  "repository": "https://github.com/empress/create-ember-ghost-template",
   "license": "MIT",
   "author": {
     "name": "Chris Manson",
