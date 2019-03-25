@@ -1,14 +1,15 @@
 {
-  "name": "create-ember-ghost-template",
+  "name": "create-empress-blog-template",
   "version": "0.2.1",
-  "description": "Enables you to start a new ember-ghost template using: npm init ember-ghost-template name",
+  "description": "Enables you to start a new empress-blog template using: npm init empress-blog-template name",
   "keywords": [
     "ember",
     "ember-cli",
     "ember-ghost",
+    "empress-blog",
     "npm"
   ],
-  "repository": "https://github.com/empress/create-ember-ghost-template",
+  "repository": "https://github.com/empress/create-empress-blog-template",
   "license": "MIT",
   "author": {
     "name": "Chris Manson",
@@ -16,7 +17,7 @@
     "url": "https://simplabs.com"
   },
   "bin": {
-    "create-ember-ghost-template": "index.js"
+    "create-empress-blog-template": "index.js"
   },
   "dependencies": {
     "ember-cli": "^3.5.1",

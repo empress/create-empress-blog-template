@@ -9,12 +9,12 @@ const parsedArgs = minimist(process.argv.slice(2));
 const args = ['addon'];
 
 // yarn reports the bin script from who-ran-me
-if (['yarn', 'create-ember-ghost-template'].includes(whoRanMe())) {
+if (['yarn', 'create-ember-ghost-template', 'create-empress-blog-template'].includes(whoRanMe())) {
   args.push('--yarn');
 }
 
 const templateName = parsedArgs._[0];
-const pluginName = `ember-ghost-${templateName}-template`;
+const pluginName = `empress-blog-${templateName}-template`;
 
 args.push(pluginName);
 
@@ -27,9 +27,9 @@ for (let i = 2; i < process.argv.length; i += 1) {
 (async () => {
   try {
     await execa('ember', args, { stdio: 'inherit' });
-    await execa('ember', ['install', 'ember-ghost', 'ember-ghost-base-template'], { cwd: pluginName, stdio: 'inherit' });
+    await execa('ember', ['install', 'empress-blog', 'empress-blog-base-template'], { cwd: pluginName, stdio: 'inherit' });
   } catch (err) {
     // eslint-disable-next-line no-console
-    console.error(`Error running 'create-ember-ghost-template': ${err.message}`, err);
+    console.error(`Error running 'create-empress-blog-template': ${err.message}`, err);
   }
 })();
