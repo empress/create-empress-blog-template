@@ -3,6 +3,11 @@
 const execa = require('execa');
 const whoRanMe = require('who-ran-me');
 const minimist = require('minimist');
+const { join, dirname } = require('path');
+
+const indexFile = require.resolve('ember-cli');
+
+const emberPath = join(dirname(indexFile), '../../bin/ember');
 
 const parsedArgs = minimist(process.argv.slice(2));
 
@@ -26,8 +31,8 @@ for (let i = 2; i < process.argv.length; i += 1) {
 
 (async () => {
   try {
-    await execa('ember', args, { stdio: 'inherit' });
-    await execa('ember', ['install', 'empress-blog', 'empress-blog-starter-template'], { cwd: pluginName, stdio: 'inherit' });
+    await execa(emberPath, args, { stdio: 'inherit' });
+    await execa(emberPath, ['install', 'empress-blog', 'empress-blog-starter-template'], { cwd: pluginName, stdio: 'inherit' });
   } catch (err) {
     // eslint-disable-next-line no-console
     console.error(`Error running 'create-empress-blog-template': ${err.message}`, err);
