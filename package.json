@@ -1,6 +1,6 @@
 {
   "name": "create-empress-blog-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enables you to start a new empress-blog template using: npm init empress-blog-template name",
   "keywords": [
     "ember",
